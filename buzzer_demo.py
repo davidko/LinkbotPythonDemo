@@ -4,9 +4,9 @@ import sys
 import util
 from PyQt4 import QtCore, QtGui
 
-from led_dialog import Ui_Dialog
+from buzzer_dialog import Ui_Dialog
 
-class LedDemo(QtGui.QDialog):
+class BuzzerDemo(QtGui.QDialog):
     demo_finished_signal = QtCore.pyqtSignal()
     def __init__(self, robot_id):
         super().__init__()
@@ -17,9 +17,9 @@ class LedDemo(QtGui.QDialog):
 
         # Connect signals
         self.ui.pushButton_run.clicked.connect(self.run)
-        self.ui.pushButton_selectColor.clicked.connect(self.set_color)
         self.ui.pushButton_close.clicked.connect(self.done)
         self.ui.lineEdit_serialId.textChanged.connect(self.update_code_box)
+        self.ui.spinBox_frequency.valueChanged.connect(self.update_code_box)
         self.demo_finished_signal.connect(self.run_finished)
 
         self.rgb = QtGui.QColor(255, 0, 255)
@@ -40,29 +40,16 @@ class LedDemo(QtGui.QDialog):
         self.ui.pushButton_run.setEnabled(True)
         self.ui.pushButton_close.setEnabled(True)
 
-    def update_code_box(self):
+    def update_code_box(self, *args, **kwargs):
         mapping = {'SERIAL_ID': self.ui.lineEdit_serialId.text(),
-                   'R':self.rgb.red(),
-                   'G':self.rgb.green(),
-                   'B':self.rgb.blue(),
+                   'frequency':self.ui.spinBox_frequency.value(),
                    }
-        code = util.translate_file('led_demo.template.py', mapping)
+        code = util.translate_file('buzzer_demo.template.py', mapping)
         self.ui.textEdit.setText(code)
-
-    def set_color(self):
-        self.rgb = QtGui.QColorDialog.getColor()
-        self.update_code_box()
-        self.ui.widget_color.setStyleSheet(
-                'background-color:rgb({}, {}, {})'.format(
-                    self.rgb.red(),
-                    self.rgb.green(),
-                    self.rgb.blue()
-                    )
-                )
 
 def main():
     app = QtGui.QApplication(sys.argv)
-    myapp = LedDemo('ABCD')
+    myapp = BuzzerDemo('ABCD')
     myapp.show()
 
     sys.exit(app.exec_())
