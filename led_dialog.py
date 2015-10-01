@@ -2,7 +2,7 @@
 
 # Form implementation generated from reading ui file 'led_dialog.ui'
 #
-# Created: Thu Oct  1 14:20:59 2015
+# Created: Thu Oct  1 15:29:48 2015
 #      by: PyQt4 UI code generator 4.10.4
 #
 # WARNING! All changes made in this file will be lost!
@@ -80,7 +80,7 @@ class Ui_Dialog(object):
         self.pushButton_selectColor.setObjectName(_fromUtf8("pushButton_selectColor"))
         self.gridLayout.addWidget(self.pushButton_selectColor, 1, 0, 1, 1)
         self.widget_color = QtGui.QWidget(self.groupBox_2)
-        self.widget_color.setStyleSheet(_fromUtf8("background-color:rgb(72, 56, 255)"))
+        self.widget_color.setStyleSheet(_fromUtf8("background-color:rgb(255, 0, 255)"))
         self.widget_color.setObjectName(_fromUtf8("widget_color"))
         self.gridLayout.addWidget(self.widget_color, 1, 1, 1, 1)
         self.verticalLayout.addWidget(self.groupBox_2)

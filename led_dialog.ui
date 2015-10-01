@@ -99,7 +99,7 @@
       <item row="1" column="1">
        <widget class="QWidget" name="widget_color" native="true">
         <property name="styleSheet">
-         <string notr="true">background-color:rgb(72, 56, 255)</string>
+         <string notr="true">background-color:rgb(255, 0, 255)</string>
         </property>
         <zorder>lineEdit_serialId</zorder>
        </widget>

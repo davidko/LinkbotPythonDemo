@@ -21,7 +21,7 @@ class LedDemo(QtGui.QDialog):
         self.ui.lineEdit_serialId.textChanged.connect(self.update_code_box)
         self.demo_finished_signal.connect(self.run_finished)
 
-        self.rgb = QtGui.QColor(255, 0, 0)
+        self.rgb = QtGui.QColor(255, 0, 255)
         self.update_code_box()
         
     def run(self):
