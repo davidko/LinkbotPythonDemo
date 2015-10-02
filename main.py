@@ -6,6 +6,8 @@ from PyQt4 import QtCore, QtGui
 
 from mainwindow import Ui_MainWindow
 import led_demo
+import buzzer_demo
+import move_demo
 
 class MyMainWindow(QtGui.QMainWindow):
     def __init__(self):
