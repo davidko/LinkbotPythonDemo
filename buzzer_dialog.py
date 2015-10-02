@@ -2,7 +2,7 @@
 
 # Form implementation generated from reading ui file 'buzzer_dialog.ui'
 #
-# Created: Thu Oct  1 16:17:45 2015
+# Created: Thu Oct  1 17:48:30 2015
 #      by: PyQt4 UI code generator 4.10.4
 #
 # WARNING! All changes made in this file will be lost!
@@ -93,14 +93,12 @@ class Ui_Dialog(object):
         self.textEdit = QtGui.QTextEdit(self.groupBox_3)
         self.textEdit.setObjectName(_fromUtf8("textEdit"))
         self.verticalLayout_3.addWidget(self.textEdit)
-        spacerItem = QtGui.QSpacerItem(20, 40, QtGui.QSizePolicy.Minimum, QtGui.QSizePolicy.Expanding)
-        self.verticalLayout_3.addItem(spacerItem)
         self.verticalLayout.addWidget(self.groupBox_3)
         self.horizontalLayout = QtGui.QHBoxLayout()
         self.horizontalLayout.setContentsMargins(-1, -1, -1, 5)
         self.horizontalLayout.setObjectName(_fromUtf8("horizontalLayout"))
-        spacerItem1 = QtGui.QSpacerItem(40, 20, QtGui.QSizePolicy.Expanding, QtGui.QSizePolicy.Minimum)
-        self.horizontalLayout.addItem(spacerItem1)
+        spacerItem = QtGui.QSpacerItem(40, 20, QtGui.QSizePolicy.Expanding, QtGui.QSizePolicy.Minimum)
+        self.horizontalLayout.addItem(spacerItem)
         self.pushButton_run = QtGui.QPushButton(Dialog)
         self.pushButton_run.setObjectName(_fromUtf8("pushButton_run"))
         self.horizontalLayout.addWidget(self.pushButton_run)
