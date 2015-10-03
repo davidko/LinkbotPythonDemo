@@ -4,7 +4,8 @@ import math
 my_linkbot = linkbot.Linkbot('$SERIAL_ID')
 
 distance = $distance # Distance to travel
-radius = $radius     # Radius of the wheel
+diameter = $diameter
+radius = diameter/2  # Radius of the wheel
 speed = $speed       # How fast to travel (in/sec)
 
 radians = distance/radius

@@ -2,8 +2,8 @@
 
 # Form implementation generated from reading ui file 'move_dialog.ui'
 #
-# Created: Thu Oct  1 17:48:20 2015
-#      by: PyQt4 UI code generator 4.10.4
+# Created: Sat Oct  3 08:37:42 2015
+#      by: PyQt4 UI code generator 4.9.3
 #
 # WARNING! All changes made in this file will be lost!
 
@@ -12,16 +12,7 @@ from PyQt4 import QtCore, QtGui
 try:
     _fromUtf8 = QtCore.QString.fromUtf8
 except AttributeError:
-    def _fromUtf8(s):
-        return s
-
-try:
-    _encoding = QtGui.QApplication.UnicodeUTF8
-    def _translate(context, text, disambig):
-        return QtGui.QApplication.translate(context, text, disambig, _encoding)
-except AttributeError:
-    def _translate(context, text, disambig):
-        return QtGui.QApplication.translate(context, text, disambig)
+    _fromUtf8 = lambda s: s
 
 class Ui_Dialog(object):
     def setupUi(self, Dialog):
@@ -131,16 +122,16 @@ class Ui_Dialog(object):
         QtCore.QMetaObject.connectSlotsByName(Dialog)
 
     def retranslateUi(self, Dialog):
-        Dialog.setWindowTitle(_translate("Dialog", "Dialog", None))
-        self.label_2.setText(_translate("Dialog", "Move a 2-wheeled Linkbot a precise distance!", None))
-        self.groupBox.setTitle(_translate("Dialog", "Instructions", None))
-        self.label_3.setText(_translate("Dialog", "<html><head/><body><p>This small demo program moves the motors on a Linkbot.</p><p>The Linkbot\'s motors are very precise. They can rotate to within 0.3 degrees of a desired angle at a constant velocity from 0 to 200 degrees per second. This means that you can make Linkbots move and turn very precise distances at precise speeds.</p><p>For this demo program, make sure the Linkbot has two wheels attached. Type in the distance you want the Linkbot to go, the radius of the wheels, and the speed you want the Linkbot to travel at and the Python script will calculate the necessary rotational speed and angle to turn the motors to achieve the desired result.</p></body></html>", None))
-        self.groupBox_2.setTitle(_translate("Dialog", "Settings", None))
-        self.label_5.setText(_translate("Dialog", "Distance (inches)", None))
-        self.label.setText(_translate("Dialog", "Robot Serial ID:", None))
-        self.label_4.setText(_translate("Dialog", "Wheel Radius (inches)", None))
-        self.label_6.setText(_translate("Dialog", "Speed (inches/second)", None))
-        self.groupBox_3.setTitle(_translate("Dialog", "Code:", None))
-        self.pushButton_run.setText(_translate("Dialog", "Run", None))
-        self.pushButton_close.setText(_translate("Dialog", "Close", None))
+        Dialog.setWindowTitle(QtGui.QApplication.translate("Dialog", "Dialog", None, QtGui.QApplication.UnicodeUTF8))
+        self.label_2.setText(QtGui.QApplication.translate("Dialog", "Move a 2-wheeled Linkbot a precise distance!", None, QtGui.QApplication.UnicodeUTF8))
+        self.groupBox.setTitle(QtGui.QApplication.translate("Dialog", "Instructions", None, QtGui.QApplication.UnicodeUTF8))
+        self.label_3.setText(QtGui.QApplication.translate("Dialog", "<html><head/><body><p>This small demo program moves the motors on a Linkbot.</p><p>The Linkbot\'s motors are very precise. They can rotate to within 0.3 degrees of a desired angle at a constant velocity from 0 to 200 degrees per second. This means that you can make Linkbots move and turn very precise distances at precise speeds.</p><p>For this demo program, make sure the Linkbot has two wheels attached. Type in the distance you want the Linkbot to go, the radius of the wheels, and the speed you want the Linkbot to travel at and the Python script will calculate the necessary rotational speed and angle to turn the motors to achieve the desired result.</p></body></html>", None, QtGui.QApplication.UnicodeUTF8))
+        self.groupBox_2.setTitle(QtGui.QApplication.translate("Dialog", "Settings", None, QtGui.QApplication.UnicodeUTF8))
+        self.label_5.setText(QtGui.QApplication.translate("Dialog", "Distance (inches)", None, QtGui.QApplication.UnicodeUTF8))
+        self.label.setText(QtGui.QApplication.translate("Dialog", "Robot Serial ID:", None, QtGui.QApplication.UnicodeUTF8))
+        self.label_4.setText(QtGui.QApplication.translate("Dialog", "Wheel Diameter (inches)", None, QtGui.QApplication.UnicodeUTF8))
+        self.label_6.setText(QtGui.QApplication.translate("Dialog", "Speed (inches/second)", None, QtGui.QApplication.UnicodeUTF8))
+        self.groupBox_3.setTitle(QtGui.QApplication.translate("Dialog", "Code:", None, QtGui.QApplication.UnicodeUTF8))
+        self.pushButton_run.setText(QtGui.QApplication.translate("Dialog", "Run", None, QtGui.QApplication.UnicodeUTF8))
+        self.pushButton_close.setText(QtGui.QApplication.translate("Dialog", "Close", None, QtGui.QApplication.UnicodeUTF8))
 

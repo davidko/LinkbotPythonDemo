@@ -44,7 +44,7 @@ class MoveDemo(QtGui.QDialog):
     def update_code_box(self, *args, **kwargs):
         mapping = {'SERIAL_ID': self.ui.lineEdit_serialId.text(),
                    'distance':self.ui.doubleSpinBox_distance.value(),
-                   'radius':self.ui.doubleSpinBox_radius.value(),
+                   'diameter':self.ui.doubleSpinBox_radius.value(),
                    'speed':self.ui.doubleSpinBox_speed.value(),
                    }
         code = util.translate_file('move_demo.template.py', mapping)
